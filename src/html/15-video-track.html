@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- favicon 설정하기 -->
+    <!-- <link href="/public/favicon/likelion.ico" rel="shortcut icon" type="image/x-icon" /> -->
+    <link rel="icon" href="/public/favicon/likelion.svg" type="image/svg" />
+    <link rel="preload" as="font" href="/public/font/suit/SUIT-Variable.woff2" />
+    <link rel="stylesheet" href="/public/font/suit/SUIT-Variable.css" />
+    <title>video 관련 요소</title>
+    <style>
+      body {
+        font-family: 'SUIT Variable', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>video Element</h1>
+    <!-- 썸네일 -->
+    <video controls autoplay muted poster="/src/assets/video/poster.jpg" width="550" height="400"> 
+      <!-- video -->
+      <source src="/src/assets/video/google-developer-stories.mp4" type="video/mp4"/>
+      <!-- <source src="/src/assets/video/google-developer-stories.webm" type="video/mp4" /> -->
+      <!-- <source src="/src/assets/video/google-developer-stories.ogg" type="video/mp4" /> -->
+      <!-- <source src="/src/assets/video/google-developer-stories.mov" type="video/mp4" /> -->
+      <!-- 자막 -->
+      <track src="/src/assets/video/stories-en.vtt" kind="captions" srclang="en" label="English Caption" />
+    </video>
+
+    <!-- 메인 페이지 이동 링크 -->
+     <br />
+     <hr />
+    <a href="/index.html" class="main-page">메인 페이지 이동</a>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- favicon 설정하기 -->
+    <!-- <link href="/public/favicon/likelion.ico" rel="shortcut icon" type="image/x-icon" /> -->
+    <link rel="icon" href="/public/favicon/likelion.svg" type="image/svg" />
+    <link rel="preload" as="font" href="/public/font/suit/SUIT-Variable.woff2" />
+    <link rel="stylesheet" href="/public/font/suit/SUIT-Variable.css" />
+    <title></title>
+    <style>
+      body {
+        font-family: 'SUIT Variable', sans-serif;
+      }
+      .table-1{
+        border:1px solid currentColor;
+        th, td{
+         border:1px solid currentColor; 
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>테이블 관련 요소</h1>
+    <table class="table-1">
+      <tr>
+        <th scope="col">이름</th>
+        <th scope="col">국어</th>
+        <th scope="col">수학</th>
+      </tr>
+      <tr>
+        <th scope="row">홍길동</t>
+        <td>80</td>
+        <td>90</td>
+      </tr>
+      <tr>
+        <th scope="row">이영희</th>
+        <td>70</td>
+        <td>90</td>
+      </tr>
+    </table>
+    <hr />
+    <table>
+      <caption class="sr-only">
+        입문자를 위한 Git과 HTML&CSS 과정
+        <span
+          >학습시간, 난이도, 교육비 지원, 평가항목, 수료기준, 정원, 교재 정보
+          등을 나타낸 표</span>
+      </caption>
+      <tr>
+        <th scope="row">학습시간</th>
+        <td>09:00~17:00</td>
+        <th scope="row">난이도</th>
+        <td>초급</td>
+      </tr>
+      <tr>
+        <th scope="row">교육비 지원</th>
+        <td>고용보험 비완급</td>
+        <th scope="row">평가 항목</th>
+        <td>출석률 100%</td>
+      </tr>
+      <tr>
+        <th scope="row">수료기준</th>
+        <td>총점 80점 이상시 수료</td>
+        <th scope="row">정원</th>
+        <td>24점</td>
+      </tr>
+      <tr>
+        <th scope="row">교재정보</th>
+        <td colspan="3">입문자를 위한 GIT과 HTML&CSS<br />HTML&CSS 웹사이트 개발과 디자인 기초(35,000원)</td>
+      </tr>
+    </table>
+    <!-- 메인 페이지 이동 링크 -->
+    <a href="/index.html" class="main-page">메인 페이지 이동</a>
+  </body>
+</html>
